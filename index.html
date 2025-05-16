@@ -18,10 +18,20 @@
       padding: 2rem 1.5rem;
       text-align: center;
     }
-    header .logo {
-      max-width: 160px;
-      margin: 0 auto 1rem;
-      display: block;
+    .logo-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      margin-bottom: 1rem;
+    }
+    .logo-wrapper svg {
+      width: 48px;
+      height: 48px;
+    }
+    .logo-wrapper span {
+      font-size: 1.75rem;
+      font-weight: 700;
     }
     header h1 {
       margin: 0;
@@ -65,23 +75,18 @@
       padding: 2rem 1.5rem;
       font-size: 0.875rem;
     }
-    .logo svg {
-      display: block;
-      margin: 0 auto 1rem;
-      max-width: 160px;
-    }
   </style>
 </head>
 <body>
   <header>
-    <div class="logo">
+    <div class="logo-wrapper">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
-        <path d="M24 4h16v6l-4 8v8l16.7 29.3c.7 1.2-.2 2.7-1.6 2.7H12.9c-1.4 0-2.3-1.5-1.6-2.7L28 26V18l-4-8V4z" fill="#fff" stroke="#1e3a8a" stroke-width="2"/>
-        <path d="M20 38a10 10 0 0020 0H20z" fill="#1e3a8a"/>
-        <circle cx="32" cy="26" r="2" fill="#1e3a8a"/>
+        <path d="M24 4h16v6l-4 8v8l16.7 29.3c.7 1.2-.2 2.7-1.6 2.7H12.9c-1.4 0-2.3-1.5-1.6-2.7L28 26V18l-4-8V4z" fill="#ffffff" stroke="#ffffff" stroke-width="2"/>
+        <path d="M20 38a10 10 0 0020 0H20z" fill="#ffffff"/>
+        <circle cx="32" cy="26" r="2" fill="#ffffff"/>
       </svg>
+      <span>Job Chemist</span>
     </div>
-    <h1>Job Chemist</h1>
     <p>Lightning-fast staffing software for agencies who need to move quickly.</p>
     <div class="cta">
       <a href="#get-started">Get Early Access</a>
