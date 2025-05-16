@@ -1,111 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Job Chemist | Fast, Simple Staffing Software</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Inter', sans-serif;
-      background: #f9fafb;
-      color: #111827;
-    }
-    header {
-      background: #2563eb;
-      color: white;
-      padding: 2rem 1.5rem;
-      text-align: center;
-    }
-    .logo-wrapper {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 1rem;
-      margin-bottom: 1rem;
-    }
-    .logo-wrapper svg {
-      width: 48px;
-      height: 48px;
-    }
-    .logo-wrapper span {
-      font-size: 1.75rem;
-      font-weight: 700;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2rem;
-    }
-    header p {
-      margin: 0.5rem 0 0;
-      font-size: 1.125rem;
-    }
-    .cta {
-      margin-top: 1.5rem;
-    }
-    .cta a {
-      background: white;
-      color: #2563eb;
-      padding: 0.75rem 1.5rem;
-      text-decoration: none;
-      border-radius: 0.5rem;
-      font-weight: 600;
-    }
-    .features {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 2rem;
-      padding: 3rem 1.5rem;
-    }
-    .feature {
-      background: white;
-      padding: 2rem;
-      border-radius: 1rem;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-    }
-    .feature h2 {
-      margin-top: 0;
-      font-size: 1.25rem;
-    }
-    footer {
-      background: #111827;
-      color: #d1d5db;
-      text-align: center;
-      padding: 2rem 1.5rem;
-      font-size: 0.875rem;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <div class="logo-wrapper">
-      <img src="job-chemist.png" alt="Job Chemist logo" />
-      <span>Job Chemist</span>
-    </div>
-    <p>Lightning-fast staffing software for agencies who need to move quickly.</p>
-    <div class="cta">
-      <a href="#get-started">Get Early Access</a>
-    </div>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job Chemist | Fast, Simple Staffing Software</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        margin: 0;
+        font-family: "Inter", sans-serif;
+        background: #f9fafb;
+        color: #042c4e; /* Dark blue text */
+      }
+      header {
+        background: #042c4e; /* Dark blue background */
+        color: white;
+        padding: 2rem 1.5rem;
+        text-align: center;
+      }
+      .logo-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        margin-bottom: 1rem;
+      }
+      .logo-wrapper img {
+        width: 20rem; /* Reduced size */
+        height: 20rem; /* Reduced size */
+      }
+      .logo-wrapper span {
+        font-size: 1.75rem;
+        font-weight: 700;
+        color: #38ac57; /* Green text for logo */
+      }
+      header h1 {
+        margin: 0;
+        font-size: 2rem;
+      }
+      header p {
+        margin: 0.5rem 0 0;
+        font-size: 1.125rem;
+      }
+      .cta {
+        margin-top: 1.5rem;
+      }
+      .cta a {
+        background: #38ac57; /* Green button */
+        color: white;
+        padding: 0.75rem 1.5rem;
+        text-decoration: none;
+        border-radius: 0.5rem;
+        font-weight: 600;
+      }
+      .cta a:hover {
+        background: #2e8e47; /* Darker green on hover */
+      }
+      .features {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 2rem;
+        padding: 3rem 1.5rem;
+      }
+      .feature {
+        background: white;
+        padding: 2rem;
+        border-radius: 1rem;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        border: 1px solid #38ac57; /* Green border */
+      }
+      .feature h2 {
+        margin-top: 0;
+        font-size: 1.25rem;
+        color: #042c4e; /* Dark blue headings */
+      }
+      footer {
+        background: #042c4e; /* Dark blue background */
+        color: #d1d5db; /* Light gray text */
+        text-align: center;
+        padding: 2rem 1.5rem;
+        font-size: 0.875rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo-wrapper">
+        <img src="job-chemist.png" alt="Job Chemist logo" />
+      </div>
+      <p>
+        Lightning-fast staffing software for agencies who need to move quickly.
+      </p>
+      <div class="cta">
+        <a href="#get-started">Get Early Access</a>
+      </div>
+    </header>
 
-  <section class="features">
-    <div class="feature">
-      <h2>Publish Jobs from Any VMS</h2>
-      <p>Seamlessly pull and publish jobs from all your connected vendor management systems.</p>
-    </div>
-    <div class="feature">
-      <h2>Smart Matching</h2>
-      <p>Automatically connect candidates to roles using intelligent filters and scoring.</p>
-    </div>
-    <div class="feature">
-      <h2>Mobile App</h2>
-      <p>Empower your candidates with a dedicated app for job alerts, shift updates, and seamless communication.</p>
-    </div>
-  </section>
+    <section class="features">
+      <div class="feature">
+        <h2>Candidate Mobile App</h2>
+        <ul>
+          <li>Find the right job and get started quickly</li>
+          <li>Perform searches, save favorites, and manage saved searches</li>
+          <li>
+            Fill out a profile with credentialing information, including
+            licensure and certification details
+          </li>
+        </ul>
+      </div>
+      <div class="feature">
+        <h2>Advanced Recruiter Tools</h2>
+        <ul>
+          <li>Match jobs and candidates effectively with detailed filtering</li>
+          <li>Track candidate job searches to help them find the best fit</li>
+        </ul>
+      </div>
+      <div class="feature">
+        <h2>Real-Time Notifications</h2>
+        <ul>
+          <li>Stay updated on candidate availability and activities</li>
+          <li>Ensure seamless communication and timely placements</li>
+        </ul>
+      </div>
+    </section>
 
-  <footer>
-    <p>&copy; 2025 Job Chemist.  All rights reserved.</p>
-  </footer>
-</body>
+    <footer>
+      <p>&copy; 2025 Job Chemist. All rights reserved.</p>
+    </footer>
+  </body>
 </html>
