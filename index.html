@@ -18,6 +18,11 @@
       padding: 2rem 1.5rem;
       text-align: center;
     }
+    header .logo {
+      max-width: 160px;
+      margin: 0 auto 1rem;
+      display: block;
+    }
     header h1 {
       margin: 0;
       font-size: 2rem;
@@ -60,10 +65,22 @@
       padding: 2rem 1.5rem;
       font-size: 0.875rem;
     }
+    .logo svg {
+      display: block;
+      margin: 0 auto 1rem;
+      max-width: 160px;
+    }
   </style>
 </head>
 <body>
   <header>
+    <div class="logo">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+        <path d="M24 4h16v6l-4 8v8l16.7 29.3c.7 1.2-.2 2.7-1.6 2.7H12.9c-1.4 0-2.3-1.5-1.6-2.7L28 26V18l-4-8V4z" fill="#fff" stroke="#1e3a8a" stroke-width="2"/>
+        <path d="M20 38a10 10 0 0020 0H20z" fill="#1e3a8a"/>
+        <circle cx="32" cy="26" r="2" fill="#1e3a8a"/>
+      </svg>
+    </div>
     <h1>Job Chemist</h1>
     <p>Lightning-fast staffing software for agencies who need to move quickly.</p>
     <div class="cta">
