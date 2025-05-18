@@ -3,172 +3,201 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Job Chemist | Fast, Simple Staffing Software</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <style>
-      body {
-        margin: 0;
-        font-family: "Inter", sans-serif;
-        background: #f9fafb;
-        color: #042c4e; /* Dark blue text */
-      }
-      header {
-        background: #042c4e; /* Dark blue background */
-        color: white;
-        padding: 2rem 1.5rem;
-        text-align: center;
-      }
-      .logo-wrapper {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 1rem;
-        margin-bottom: 1rem;
-      }
-      .logo-wrapper img {
-        width: 20rem; /* Reduced size */
-        height: 20rem; /* Reduced size */
-      }
-      .logo-wrapper span {
-        font-size: 1.75rem;
-        font-weight: 700;
-        color: #38ac57; /* Green text for logo */
-      }
-      header h1 {
-        margin: 0;
-        font-size: 2rem;
-      }
-      header p {
-        margin: 0.5rem 0 0;
-        font-size: 1.125rem;
-      }
-      .cta {
-        margin-top: 1.5rem;
-      }
-      .cta a {
-        background: #38ac57; /* Green button */
-        color: white;
-        padding: 0.75rem 1.5rem;
-        text-decoration: none;
-        border-radius: 0.5rem;
-        font-weight: 600;
-      }
-      .cta a:hover {
-        background: #2e8e47; /* Darker green on hover */
-      }
-      .features {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-        gap: 2rem;
-        padding: 3rem 1.5rem;
-      }
-      .feature {
-        background: white;
-        padding: 2rem;
-        border-radius: 1rem;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-        border: 1px solid #38ac57; /* Green border */
-      }
-      .feature h2 {
-        margin-top: 0;
-        font-size: 1.25rem;
-        color: #042c4e; /* Dark blue headings */
-      }
-      .section-header {
-        text-align: center;
-        font-size: 2rem;
-        font-weight: 700;
-        color: #042c4e; /* Dark blue text */
-        margin-top: 3rem;
-        margin-bottom: 1.5rem;
-      }
-      footer {
-        background: #042c4e; /* Dark blue background */
-        color: #d1d5db; /* Light gray text */
-        text-align: center;
-        padding: 2rem 1.5rem;
-        font-size: 0.875rem;
-      }
-    </style>
+    <title>Job Chemist</title>
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
-    <header>
-      <div class="logo-wrapper">
-        <img src="job-chemist.png" alt="Job Chemist logo" />
+  <body class="bg-white text-gray-800 font-sans">
+    <!-- Header -->
+    <header class="flex items-center justify-between p-6 shadow-md">
+      <div class="flex items-center gap-3">
+        <!-- Logo -->
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 64 64"
+          class="w-10 h-10 text-indigo-600 fill-current"
+        >
+          <path
+            d="M40 4v20.7L51.6 50c2 5.1-1.7 10.6-7.2 10.6H19.6c-5.5 0-9.2-5.5-7.2-10.6L24 24.7V4h16zM28 8v18.7L17.1 49.2c-.7 1.8.6 3.8 2.5 3.8h24.8c1.9 0 3.2-2 2.5-3.8L36 26.7V8h-8z"
+          />
+        </svg>
+        <span class="text-2xl font-bold text-indigo-700">Job Chemist</span>
       </div>
-      <p>
-        Lightning-fast staffing software for agencies who need to move quickly.
-      </p>
-      <div class="cta">
-        <a href="#get-started">Get Early Access</a>
-      </div>
+      <nav class="hidden md:flex gap-6 text-sm text-gray-600">
+        <a href="#features" class="hover:text-indigo-600">Features</a>
+        <a href="#how-it-works" class="hover:text-indigo-600">How it Works</a>
+        <a href="#contact" class="hover:text-indigo-600">Contact</a>
+      </nav>
     </header>
 
-    <section class="features">
-      <div class="feature">
-        <h2>Candidate Mobile App</h2>
-        <ul>
-          <li>Find the right job and get started quickly</li>
-          <li>Perform searches, save favorites, and manage saved searches</li>
-          <li>
-            Fill out a profile with credentialing information, including
-            licensure and certification details
-          </li>
-        </ul>
+    <!-- Hero -->
+    <main
+      class="text-center px-6 py-20 bg-gradient-to-b from-white to-indigo-50"
+    >
+      <h1 class="text-4xl md:text-6xl font-extrabold mb-4 text-indigo-800">
+        Smarter Staffing Starts Here
+      </h1>
+      <p class="text-lg md:text-xl text-gray-700 max-w-2xl mx-auto">
+        Job Chemist helps staffing agencies publish jobs from any VMS—no manual
+        posting, no duplicate entry. Automatically distribute jobs to your
+        mobile app and track candidate interest in real time.
+      </p>
+      <div class="mt-10 flex justify-center gap-4">
+        <a
+          href="#contact"
+          class="bg-indigo-600 text-white px-6 py-3 rounded-2xl font-medium shadow hover:bg-indigo-700 transition"
+        >
+          Request a Demo
+        </a>
+        <a
+          href="#features"
+          class="border border-indigo-600 text-indigo-600 px-6 py-3 rounded-2xl font-medium hover:bg-indigo-100 transition"
+        >
+          Learn More
+        </a>
       </div>
-      <div class="feature">
-        <h2>Advanced Recruiter Tools</h2>
-        <ul>
-          <li>Match jobs and candidates effectively with detailed filtering</li>
-          <li>Track candidate job searches to help them find the best fit</li>
-        </ul>
-      </div>
-      <div class="feature">
-        <h2>Real-Time Notifications</h2>
-        <ul>
-          <li>Stay updated on candidate availability and activities</li>
-          <li>Ensure seamless communication and timely placements</li>
-        </ul>
+    </main>
+
+    <!-- Features -->
+    <section id="features" class="px-6 py-20 bg-white">
+      <div class="max-w-5xl mx-auto text-center">
+        <h2 class="text-3xl font-bold text-indigo-800 mb-10">Features</h2>
+        <div class="grid md:grid-cols-3 gap-12 text-left">
+          <div>
+            <h3 class="text-xl font-semibold text-indigo-700 mb-2">
+              VMS Integration
+            </h3>
+            <p class="text-gray-700">
+              Seamlessly ingest jobs from top VMS platforms like ShiftWise, Aya,
+              AMN, and more—no data entry required.
+            </p>
+          </div>
+          <div>
+            <h3 class="text-xl font-semibold text-indigo-700 mb-2">
+              Custom Filtering
+            </h3>
+            <p class="text-gray-700">
+              Control which jobs are published based on client, specialty,
+              location, pay package, and more.
+            </p>
+          </div>
+          <div>
+            <h3 class="text-xl font-semibold text-indigo-700 mb-2">
+              Mobile Distribution
+            </h3>
+            <p class="text-gray-700">
+              Automatically push jobs to your branded mobile app, allowing
+              candidates to view, favorite, and apply in seconds.
+            </p>
+          </div>
+          <div>
+            <h3 class="text-xl font-semibold text-indigo-700 mb-2">
+              Activity Tracking
+            </h3>
+            <p class="text-gray-700">
+              See which jobs are getting traction and which ones aren’t—optimize
+              your sourcing with real-time insights.
+            </p>
+          </div>
+          <div>
+            <h3 class="text-xl font-semibold text-indigo-700 mb-2">
+              Zero-Code Setup
+            </h3>
+            <p class="text-gray-700">
+              Get started without involving IT. We handle the integrations and
+              deployment. You control the rules.
+            </p>
+          </div>
+          <div>
+            <h3 class="text-xl font-semibold text-indigo-700 mb-2">
+              Secure & Scalable
+            </h3>
+            <p class="text-gray-700">
+              Built on secure cloud infrastructure with redundancy and
+              performance you can count on—even during peak job surges.
+            </p>
+          </div>
+        </div>
       </div>
     </section>
 
-    <h2 class="section-header">Additional Features</h2>
-
-    <section class="features">
-      <div class="feature">
-        <h2>Referral Program</h2>
-        <ul>
-          <li>Encourage candidates to refer friends and colleagues</li>
-          <li>Track referrals and reward successful placements</li>
-        </ul>
-      </div>
-      <div class="feature">
-        <h2>Credentialing Made Easy</h2>
-        <ul>
-          <li>
-            Streamline the process of collecting and verifying licensure and
-            certifications
-          </li>
-          <li>Ensure compliance with industry standards</li>
-        </ul>
-      </div>
-      <div class="feature">
-        <h2>Transparent Pay Packages</h2>
-        <ul>
-          <li>Provide detailed pay package information to candidates</li>
-          <li>
-            Help candidates make informed decisions with clear compensation
-            details
-          </li>
-        </ul>
+    <!-- How it Works -->
+    <section id="how-it-works" class="px-6 py-20 bg-indigo-50">
+      <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-3xl font-bold text-indigo-800 mb-10">How It Works</h2>
+        <div class="grid md:grid-cols-3 gap-10 text-left">
+          <div class="p-6 bg-white rounded-xl shadow">
+            <h3 class="text-lg font-semibold text-indigo-700 mb-2">
+              1. Connect Your VMS
+            </h3>
+            <p class="text-gray-700">
+              We securely connect to your existing VMS platform(s) and begin
+              syncing jobs automatically.
+            </p>
+          </div>
+          <div class="p-6 bg-white rounded-xl shadow">
+            <h3 class="text-lg font-semibold text-indigo-700 mb-2">
+              2. Filter and Approve
+            </h3>
+            <p class="text-gray-700">
+              Use our portal to review and approve which jobs to publish. Or let
+              automation do it for you.
+            </p>
+          </div>
+          <div class="p-6 bg-white rounded-xl shadow">
+            <h3 class="text-lg font-semibold text-indigo-700 mb-2">
+              3. Engage Candidates
+            </h3>
+            <p class="text-gray-700">
+              Jobs appear instantly in your candidate-facing mobile app. Track
+              favorites, clicks, and conversions.
+            </p>
+          </div>
+        </div>
       </div>
     </section>
 
-    <footer>
-      <p>&copy; 2025 Job Chemist. All rights reserved.</p>
+    <!-- Contact -->
+    <section id="contact" class="px-6 py-20 bg-white">
+      <div class="max-w-xl mx-auto text-center">
+        <h2 class="text-3xl font-bold text-indigo-800 mb-6">Get in Touch</h2>
+        <p class="text-gray-600 mb-10">
+          Interested in seeing Job Chemist in action? Fill out the form below
+          and we'll schedule a demo.
+        </p>
+        <form class="grid gap-4 text-left">
+          <input
+            type="text"
+            placeholder="Name"
+            class="w-full p-3 border rounded-lg"
+          />
+          <input
+            type="email"
+            placeholder="Email"
+            class="w-full p-3 border rounded-lg"
+          />
+          <input
+            type="text"
+            placeholder="Company"
+            class="w-full p-3 border rounded-lg"
+          />
+          <textarea
+            placeholder="Message"
+            rows="4"
+            class="w-full p-3 border rounded-lg"
+          ></textarea>
+          <button
+            type="submit"
+            class="bg-indigo-600 text-white px-6 py-3 rounded-lg hover:bg-indigo-700 transition"
+          >
+            Request Demo
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-indigo-700 text-white text-sm text-center p-6">
+      &copy; 2025 Job Chemist. All rights reserved.
     </footer>
   </body>
 </html>
