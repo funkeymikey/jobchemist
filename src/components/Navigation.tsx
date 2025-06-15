@@ -12,7 +12,7 @@ export const Navigation = () => {
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
             <img
-              src="logos/Linear - On Light.svg"
+              src="logo.svg"
               alt="JobChemist Logo"
               className="h-8 w-auto mr-4"
             />
