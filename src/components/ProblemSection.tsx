@@ -35,7 +35,14 @@ export const ProblemSection = () => {
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
             The Healthcare Staffing Challenge
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <div className="max-w-3xl mx-auto text-center">
+            <img
+              src="/recruiter.png"
+              alt="Recruiter"
+              className="mx-auto w-full rounded-lg shadow-lg"
+            />
+          </div>
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto mt-6">
             Healthcare staffing agencies struggle with outdated processes that
             waste time, frustrate candidates, and ultimately limit growth and
             profitability.
@@ -43,13 +50,6 @@ export const ProblemSection = () => {
         </div>
 
         {/* Include image of recruiter */}
-        <div className="mb-12 text-center">
-          <img
-            src="/recruiter.png"
-            alt="Recruiter"
-            className="mx-auto w-full max-w-md rounded-lg shadow-lg"
-          />
-        </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {problems.map((problem, index) => (
